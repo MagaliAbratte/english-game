@@ -1,0 +1,148 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.game-container {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.quiz-box {
+  background-color: rgba(200, 200, 200, 0.85);
+  color: black;
+  border-radius: 20px;
+  padding: 20px;
+  width: 500px;
+  height: 510px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.question-block {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 30px;
+}
+
+.question-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.sentence {
+  font-size: 18px;
+  margin-bottom: 15px;
+  height: 50px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.option-button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 1px solid #aaa;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.option-button:hover:not(:disabled) {
+  background-color: #555;
+  border-color: #555;
+}
+
+.option-button.correct {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+.option-button.incorrect {
+  background-color: #f44336;
+  border-color: #f44336;
+}
+
+.feedback {
+  font-size: 16px;
+  height: 40px;
+  margin-top: 0px;
+  color: black;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+  text-align: center;
+}
+
+.feedback.hidden {
+  opacity: 0;
+}
+
+.text-green {
+  color: #1e8449;
+}
+
+.text-red {
+  color: #c0392b;
+}
+
+.next-button {
+  margin: 10px auto 0;
+  padding: 10px 20px;
+  background-color: #0b2545;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 30%;
+}
+
+.next-button:hover:not(:disabled) {
+  background-color: #133b66;
+}
+
+.next-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.score {
+  margin-top: 10px;
+  font-size: 14px;
+  color: black;
+  text-align: center;
+}
+
+.result {
+  margin-top: 25px;
+  text-align: center;
+  padding: 20%;
+}
+
+.astro-message {
+  margin-top: 15px;
+  font-style: italic;
+  color: black;
+}
