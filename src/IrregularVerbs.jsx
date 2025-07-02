@@ -3,14 +3,24 @@ import './IrregularVerbs.css';
 
 const questions = [
   {
-    sentence: "If I ____ a telescope, I would observe the stars every night.",
-    options: ["have", "had", "has"],
-    answer: "had",
+    sentence: "If I ____ my birth chart earlier, I would have understood my emotions better.",
+    options: ["study", "studied", "had studied"],
+    answer: "had studied",
   },
   {
-    sentence: "She ____ her birth chart last week.",
-    options: ["read", "reads", "readed"],
-    answer: "read",
+    sentence: "She ____ her tarot cards every morning before work.",
+    options: ["reads", "read", "is reading"],
+    answer: "reads",
+  },
+  {
+    sentence: "They have ____ a lot about their moon sign lately.",
+    options: ["learn", "learned", "learning"],
+    answer: "learned",
+  },
+  {
+    sentence: "While Mercury was in retrograde, I was ____ very anxious.",
+    options: ["feel", "felt", "feeling"],
+    answer: "feeling",
   },
   {
     sentence: "If Mercury ____ retrograde, I wouldn’t have signed that contract.",
@@ -18,20 +28,10 @@ const questions = [
     answer: "were",
   },
   {
-    sentence: "He has ____ many astrology books.",
-    options: ["read", "reads", "reading"],
-    answer: "read",
+    sentence: "Right now, she is ____ a ritual for the full moon.",
+    options: ["do", "doing", "did"],
+    answer: "doing",
   },
-  {
-    sentence: "They ____ their rising sign yesterday.",
-    options: ["discover", "discovered", "have discovered"],
-    answer: "discovered",
-  },
-  {
-    sentence: "If she ____ earlier, she would have caught the lunar eclipse.",
-    options: ["arrived", "arrive", "arrives"],
-    answer: "arrived",
-  }
 ];
 
 export const IrregularVerbsGame = () => {
